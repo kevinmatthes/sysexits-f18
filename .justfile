@@ -40,4 +40,10 @@ alias ver   := bump
     bump2version {{part}}
     scriv collect
 
+# Create the Doxygen documentation for this project.
+@doxygen:
+    doxygen doxygen.cfg
+    cd latex/ && latexmk -f -r ../.latexmkrc --silent refman
+    cp latex/refman.pdf doxygen.pdf
+
 ################################################################################
