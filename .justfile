@@ -31,6 +31,7 @@
 ################################################################################
 
 # Synonyms for the configured recipes.
+alias d     := doxygen
 alias ver   := bump
 
 
