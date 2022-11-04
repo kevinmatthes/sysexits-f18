@@ -47,8 +47,8 @@
 module sysexits_f18
 implicit none
 private
-    !> This library's version
-    character (*), parameter    :: library_version = 'v0.0.0'
+    !> This library's version.
+    character (*), parameter, public    :: library_version = 'v0.0.0'
 end module sysexits_f18
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
