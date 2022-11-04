@@ -21,39 +21,19 @@
 ################################################################################
 ##
 ##  AUTHOR      Kevin Matthes
-##  BRIEF       The configuration of Dependabot.
+##  BRIEF       The settings for the LaTeX compilation system.
 ##  COPYRIGHT   GPL-2.0
 ##  DATE        2022
-##  FILE        dependabot.yml
+##  FILE        .latexmkrc
 ##  NOTE        See `LICENSE' for full license.
 ##              See `README.md' for project details.
 ##
 ################################################################################
 
-version: 2
-updates:
-  - package-ecosystem: github-actions
-    directory: /
-    schedule:
-      interval: daily
-      time: '00:00'
-    assignees:
-      - kevinmatthes
-    commit-message:
-      prefix: Dependabot
-      include: scope
-    milestone: 1
+# Set the maximum count of compilation runs to the Doxygen default value.
+$max_repeat = 8;
 
-  - package-ecosystem: gitsubmodule
-    directory: /
-    schedule:
-      interval: daily
-      time: '00:00'
-    assignees:
-      - kevinmatthes
-    commit-message:
-      prefix: Dependabot
-      include: scope
-    milestone: 1
+# Use `pdflatex` as LaTeX compiler.
+$pdf_mode = 1;
 
 ################################################################################

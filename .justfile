@@ -21,39 +21,23 @@
 ################################################################################
 ##
 ##  AUTHOR      Kevin Matthes
-##  BRIEF       The configuration of Dependabot.
+##  BRIEF       The recipes in order to compile the provided executable.
 ##  COPYRIGHT   GPL-2.0
 ##  DATE        2022
-##  FILE        dependabot.yml
+##  FILE        .justfile
 ##  NOTE        See `LICENSE' for full license.
 ##              See `README.md' for project details.
 ##
 ################################################################################
 
-version: 2
-updates:
-  - package-ecosystem: github-actions
-    directory: /
-    schedule:
-      interval: daily
-      time: '00:00'
-    assignees:
-      - kevinmatthes
-    commit-message:
-      prefix: Dependabot
-      include: scope
-    milestone: 1
+# Synonyms for the configured recipes.
+alias ver   := bump
 
-  - package-ecosystem: gitsubmodule
-    directory: /
-    schedule:
-      interval: daily
-      time: '00:00'
-    assignees:
-      - kevinmatthes
-    commit-message:
-      prefix: Dependabot
-      include: scope
-    milestone: 1
+
+
+# Increment the version numbers.
+@bump part:
+    bump2version {{part}}
+    scriv collect
 
 ################################################################################

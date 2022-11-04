@@ -21,39 +21,63 @@
 ################################################################################
 ##
 ##  AUTHOR      Kevin Matthes
-##  BRIEF       The configuration of Dependabot.
+##  BRIEF       Settings for the Git repository.
 ##  COPYRIGHT   GPL-2.0
 ##  DATE        2022
-##  FILE        dependabot.yml
+##  FILE        .gitignore
 ##  NOTE        See `LICENSE' for full license.
 ##              See `README.md' for project details.
 ##
 ################################################################################
 
-version: 2
-updates:
-  - package-ecosystem: github-actions
-    directory: /
-    schedule:
-      interval: daily
-      time: '00:00'
-    assignees:
-      - kevinmatthes
-    commit-message:
-      prefix: Dependabot
-      include: scope
-    milestone: 1
+# Build artifacts.
+build/
+target/
 
-  - package-ecosystem: gitsubmodule
-    directory: /
-    schedule:
-      interval: daily
-      time: '00:00'
-    assignees:
-      - kevinmatthes
-    commit-message:
-      prefix: Dependabot
-      include: scope
-    milestone: 1
+*.a
+*.bak
+*.dll
+*.exe
+*.hi
+*.lib
+*.mod
+*.o
+*.obj
+*.smod
+*.so
+
+
+
+# Documentation artifacts.
+*.asy
+*.eps
+*.pdf
+
+
+
+# Doxygen / Haddock directories.
+html/
+latex/
+man/
+
+
+
+# LaTeX artifacts.
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lol
+*.lot
+*.out
+*.run.xml
+*.synctex(busy)
+*.synctex.gz
+*.tdo
+*.toc
 
 ################################################################################
