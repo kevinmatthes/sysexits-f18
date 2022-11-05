@@ -71,7 +71,7 @@ private
     !> The requested service was not available.
     integer, parameter, public  :: unavailable          = 69
 
-    !> There was an internal error in the called program.
+    !> The called program had an internal error.
     integer, parameter, public  :: software             = 70
 
     !> There was an error concerning the operating system.
