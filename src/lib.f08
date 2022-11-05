@@ -47,8 +47,56 @@
 module sysexits_f18
 implicit none
 private
-    !> This library's version
-    character (*), parameter    :: library_version = 'v0.0.0'
+    !> This library's version.
+    character (*), parameter, public    :: library_version = 'v0.0.0'
+
+    !> Anything worked as expected.
+    integer, parameter, public  :: okay                 = 0
+
+    !> The program was not applied appropriately.
+    integer, parameter, public  :: usage                = 64
+
+    !> The user input mismatched the expectations.
+    integer, parameter, public  :: data_error           = 65
+
+    !> The requested user input file was not accessible.
+    integer, parameter, public  :: no_input             = 66
+
+    !> There was no such user.
+    integer, parameter, public  :: no_user              = 67
+
+    !> There was no such host.
+    integer, parameter, public  :: no_host              = 68
+
+    !> The requested service was not available.
+    integer, parameter, public  :: unavailable          = 69
+
+    !> The called program had an internal error.
+    integer, parameter, public  :: software             = 70
+
+    !> There was an error concerning the operating system.
+    integer, parameter, public  :: os_error             = 71
+
+    !> The requested file of the operating system was not accessible.
+    integer, parameter, public  :: os_file              = 72
+
+    !> The creation of the requested output file failed.
+    integer, parameter, public  :: cannot_create        = 73
+
+    !> There was an input / output related error.
+    integer, parameter, public  :: io_error             = 74
+
+    !> There was a temporary failure.
+    integer, parameter, public  :: temporary_failure    = 75
+
+    !> There was a violation against the protocol.
+    integer, parameter, public  :: protocol             = 76
+
+    !> The user was not permitted to execute this operation.
+    integer, parameter, public  :: no_permission        = 77
+
+    !> The configuration mismatched the expectations.
+    integer, parameter, public  :: configuration        = 78
 end module sysexits_f18
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
