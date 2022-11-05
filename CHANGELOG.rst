@@ -51,4 +51,48 @@ All pending changelog entries are stored in `changelog.d`_.
 
 .. scriv-insert-here
 
+.. _changelog-0.0.1:
+
+0.0.1 — 2022-11-05
+------------------
+
+Added
+.....
+
+- build routine:  Just
+
+- create ``.gitignore``
+
+- create library source file
+
+- Doxygen:  Fortran setup
+
+- Latexmk settings
+
+- create CITATION.cff
+
+- Dependabot:  GitHub Action setup
+
+- Dependabot:  Git submodule setup
+
+- GitHub Action:  CFF validation
+
+- bump2version configuration
+
+- create this CHANGELOG
+
+- Scriv configuration
+
+- create ``.gitmodules``
+
+- create Sciv artifact storage
+
+- submodule:  literature
+
+- create repository README
+
+- create this repository
+
+- license:  GPL-2.0
+
 .. -------------------------------------------------------------------------- ..
