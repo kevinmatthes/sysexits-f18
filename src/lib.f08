@@ -48,7 +48,7 @@ module sysexits_f18
 implicit none
 private
     !> This library's version.
-    character (*), parameter, public    :: library_version = 'v0.0.0'
+    character (*), parameter, public    :: library_version = 'v0.0.1'
 
     !> Anything worked as expected.
     integer, parameter, public  :: okay                 = 0
