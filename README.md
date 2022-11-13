@@ -33,9 +33,13 @@
 
 ## Summary
 
+[![](https://github.com/kevinmatthes/sysexits-f18/workflows/cffconvert/badge.svg)](https://github.com/kevinmatthes/sysexits-f18/workflows/cffconvert)
+
 A Fortran 2018 version of the sysexits.h codes.
 
 ## License
+
+[![](https://img.shields.io/github/license/kevinmatthes/sysexits-f18)](https://github.com/kevinmatthes/sysexits-f18)
 
 This project's license is **GPL-2.0** (as of June 1991).  The whole license text
 can be found in `LICENSE` in the main directory of this repository.  The brief
